@@ -9,6 +9,10 @@ The admin inputs car data with the default availability being true, then inputs 
 The customer registers, then logs in to be able to order a car, if a car with false availability means that car cannot be rented. Customers need to make payments via an integrated e-wallet, if the payment is successful then the paid status will become true and the payment date will be filled.
 
 This API has several functions that need further improvement.
+
+## ERD
+https://drive.google.com/drive/folders/13dX0QmNM-R40hBIiK5Xvvs0pzSvY8-u0?usp=share_link
+
 ## Environment Variables
 
 To run this project, I did a setup on the environment variable.
