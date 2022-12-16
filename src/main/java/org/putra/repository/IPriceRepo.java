@@ -17,6 +17,6 @@ public interface IPriceRepo extends JpaRepository<Price, String> {
     @Query(value = "SELECT * FROM mst_price", nativeQuery = true)
     List<Price> findAllPrice();
 
-    @Query(value = "SELECT * FROM mst_price p WHERE p.priceId = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM mst_price mp WHERE mp.price_id = ?1", nativeQuery = true)
     Price findByPriceId(String priceId);
 }

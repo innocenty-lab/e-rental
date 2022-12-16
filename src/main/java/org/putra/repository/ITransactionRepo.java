@@ -12,6 +12,6 @@ public interface ITransactionRepo extends JpaRepository<Transaction, String> {
     @Query(value = "SELECT * FROM transaction", nativeQuery = true)
     List<Transaction> findAllTransaction();
 
-    @Query(value = "SELECT * FROM transaction t WHERE t.customer = ?1 AND t.bookedDate = ?2", nativeQuery = true)
+    @Query(value = "SELECT * FROM transaction t WHERE t.customer_nik = ?1 AND t.booked_date = ?2", nativeQuery = true)
     Transaction findByCustomerAndBookedDate(Customer customer, Date bookedDate);
 }

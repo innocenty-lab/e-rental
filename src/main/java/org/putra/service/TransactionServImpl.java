@@ -33,9 +33,10 @@ public class TransactionServImpl implements ITransactionServ {
     public Transaction order(Transaction transaction) throws Exception {
         try {
             // save transaction
-            Customer existingCustomer = iCustomerRepo.findByCustomerNik("1234");
+            Customer existingCustomer = iCustomerRepo.findByCustomerNik("123456");
             Transaction newTransaction = new Transaction();
-            newTransaction.setCustomer(existingCustomer);
+//            newTransaction.setCustomer(existingCustomer);
+            newTransaction.setCustomer(null);
             newTransaction.setBookedDate(transaction.getBookedDate());
             newTransaction.setIsPaid(transaction.getIsPaid());
             newTransaction.setPaidDate(transaction.getPaidDate());
