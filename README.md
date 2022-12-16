@@ -22,7 +22,7 @@ To run this project, I did a setup on the environment variable.
 
 In this project there is a dependency on swagger to do testing on the API. 
 
-http://{host}:{port}/swagger-ui/index.html#/
+http://localhost:{port}/swagger-ui/index.html#/
 
 
 ADMIN: 
